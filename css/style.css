@@ -1,0 +1,107 @@
+.gallery {
+    column-count: 1;
+    column-gap: 1rem;
+    padding: 1rem;
+}
+.gallery img {
+    width: 85%;
+    margin-bottom: 1rem;
+    display: block;
+    transition: transform 0.3 ease;
+    border: solid black 4px;
+    border-radius: 5%;
+    background-color: #fff;
+    padding: 1rem 1rem 4rem;
+    box-shadow: 5px 7px 4px #888888;
+}
+.gallery img:hover,
+.gallery img:focus-visible {
+    transform: scale(1.02)
+}
+@media screen and (min-width: 768px){
+    .gallery {
+    column-count: 3;
+  }
+}
+
+main {
+    max-width: 1000px;
+    margin: 50px auto; /* Centers the text and gives space from the grid */
+    padding: 0 20px;
+    line-height: 1.6; /* Makes the text easier to read */
+}
+
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #444;
+    line-height: 2;
+}
+
+h1, h2, h3 {
+    font-family: 'Georgia', serif;
+    color: #395756;
+    margin-top: 15px;
+}
+
+.guide-topic {
+    margin-bottom: 30px;
+    border-left: 4px solid #3498db;
+    padding-left: 20px;
+}
+
+nav {
+    background-color: #1B3022;
+    padding: 15px;
+}
+
+.nav-container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav-home {
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 25px;
+    border-bottom: 2px solid #ffcc00;
+}
+
+.nav-places {
+    list-style: none; /* gets rid of bullet points */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0;
+}
+
+.nav-places a {
+    color: #dfdbdb;
+    text-decoration: none;
+    font-size: 18px;
+    display: block; /* Expands target clickable area for thumbs */
+    padding: 10px; 
+}
+
+/* Interactive States: Combined Hover and Focus */
+nav a:hover,
+nav a:focus-visible {
+    color: #ffcc00;
+    outline: 2px dashed #ffcc00;
+}
+
+@media screen and (min-width: 768px) {
+    .nav-container {
+        flex-direction: row; /* Side-by-side row alignment */
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav-places {
+        flex-direction: row; /* Places layout horizontally */
+        gap: 20px;
+    }
+}
