@@ -8,21 +8,23 @@
 </head>
 <body>
     <header>
+        <a href="#main" class="skip">Skip to Main Content</a>
         <h1>Galway</h1>
     </header>
     <nav>
-        <div class="nav-container">
-            <a href="index.html">Home</a>
-            <div class="nav-places">
-                <a href="dublin.html">Dublin</a>
-                <a href="howth.html">Howth</a>
-                <a href="galway.html">Galway</a>
-                <a href="aran.html">Aran Islands: Inis Mór</a>
-                <a href="glendalough.html">Glendalough</a>
-            </div>
-        </div>
+    <div class="nav-container">
+        <a href="index.html" class="nav-home">Home</a>
+        
+        <ul class="nav-places">
+            <li><a href="dublin.html">Dublin</a></li>
+            <li><a href="howth.html">Howth</a></li>
+            <li><a href="galway.html">Galway</a></li>
+            <li><a href="aran.html">Aran Islands</a></li>
+            <li><a href="glendalough.html">Glendalough</a></li>
+        </ul>
+    </div>
     </nav>
-<main>
+<main id="main">
     <div class="gallery">
         <img src="images/galway_street.jpeg" alt="">
         <img src="images/galway_live_music.jpeg" alt="">
@@ -37,6 +39,10 @@
     </div>
 
     <section>
+        <button id="text-resize-btn" aria-label="Increase text size" aria-pressed="false">
+            A+ Increase Text Size
+        </button>
+
         <h2>A Traveler's Guide to Galway</h2>
 
         <article class="guide-topic">
@@ -80,5 +86,8 @@
 <footer>
     <p>&copy; 2026 My Dublin Travel Guide</p>
 </footer>
+
+<script src="js/js.js"></script>
+
 </body>
 </html>
