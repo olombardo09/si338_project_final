@@ -8,21 +8,23 @@
 </head>
 <body>
     <header>
+        <a href="#main" class="skip">Skip to Main Content</a>
         <h1>Dublin</h1>
     </header>
     <nav>
-        <div class="nav-container">
-            <a href="index.html">Home</a>
-            <div class="nav-places">
-                <a href="dublin.html">Dublin</a>
-                <a href="howth.html">Howth</a>
-                <a href="galway.html">Galway</a>
-                <a href="aran.html">Aran Islands: Inis Mór</a>
-                <a href="glendalough.html">Glendalough</a>
-            </div>
-        </div>
+    <div class="nav-container">
+        <a href="index.html" class="nav-home">Home</a>
+        
+        <ul class="nav-places">
+            <li><a href="dublin.html">Dublin</a></li>
+            <li><a href="howth.html">Howth</a></li>
+            <li><a href="galway.html">Galway</a></li>
+            <li><a href="aran.html">Aran Islands</a></li>
+            <li><a href="glendalough.html">Glendalough</a></li>
+        </ul>
+    </div>
     </nav>
-<main>
+<main id="main">
     <div class="gallery">
         <img src="images/dublin_brazen.jpg" alt="">
         <img src="images/dublin_beanhive.jpeg" alt="">
@@ -39,6 +41,9 @@
     </div>
 
     <section>
+        <button id="text-resize-btn" aria-label="Increase text size" aria-pressed="false">
+        A+ Increase Text Size
+        </button>
         <h2>A Traveler's Guide to Dublin</h2>
 
         <article class="guide-topic">
@@ -67,22 +72,46 @@
 
     <h4>Best Cafes for Coffee & Pastries:</h4>
     <ul>
-        <li><strong>Beanhive:</strong> My absolute favorite spot for a latte or london fog. The coffee is 10/10, and their pastries are the perfect way to start a day of sightseeing</li>
-        <li><strong>Gerard's:</strong> This is a good spot for a takeaway coffee and treats on your way to class</li>
-        <li><strong>Rumi:</strong> Another great cafe  if you are looking for a quality coffee and a relaxing space to work</li>
+        <li>
+            Beanhive: My absolute favorite spot for a latte or london fog. The coffee is 10/10, and their pastries are the perfect way to start a day of sightseeing
+            <span id="beanhive-status"></span>
+        </li>
+        <li>
+            Gerard's: This is a good spot for a takeaway coffee and treats on your way to class
+            <span id="gerards-status"></span>
+        </li>
+        <li>
+            Rumi: Another great cafe  if you are looking for a quality coffee and a relaxing space to work
+            <span id="rumi-status"></span>
+        </li>
     </ul>
 
     <h4>Pubs & Hearty Dinners:</h4>
     <ul>
-        <li><strong>The Brazen Head:</strong> One of the oldest pubs in Dublin, and a must-visit on your trip</li>
-        <li><strong>Doom Slice:</strong> Pizza & Drinks</li>
-        <li><strong>Darkey Kelly's:</strong> Irish Pub</li>
+        <li>
+            The Brazen Head: One of the oldest pubs in Dublin, and a must-visit on your trip
+            <span id="brazen-status"></span>
+        </li>
+        <li>
+            Doom Slice: Pizza & Drinks
+            <span id="doomSlice-status"></span>
+        </li>
+        <li>
+            Darkey Kelly's: Irish Pub
+            <span id="darkeys-status"></span>
+        </li>
     </ul>
 
     <h4>Sweet Treats:</h4>
     <ul>
-        <li><strong>Gino's Gelato:</strong> Crepes & Gelato</li>
-        <li><strong>The Rolling Donut:</strong> Gourmet Donuts</li>
+        <li>
+            Gino's Gelato: Crepes & Gelato
+            <span id="gino-status"></span>
+        </li>
+        <li>
+            The Rolling Donut: Gourmet Donuts
+            <span id="rolling-donut-status"></span>
+        </li>
     </ul>
 </article>
        
@@ -100,5 +129,8 @@
 <footer>
     <p>&copy; 2026 My Dublin Travel Guide</p>
 </footer>
+
+<script src="js/js.js"></script>
+
 </body>
 </html>
