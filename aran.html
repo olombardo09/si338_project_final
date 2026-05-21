@@ -5,21 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aran Islands: Inis Mór</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/ai.css">
+    <link rel="stylesheet" href="css/reset.css">
 </head>
 <body>
     <header>
         <a href="#main" class="skip">Skip to Main Content</a>
-        <h1>Aran Islands: Inis Mór</h1>
+        <h1>&#127808Aran Islands: Inis Mór</h1>
     </header>
     <nav>
     <div class="nav-container">
-        <a href="index.html" class="nav-home">Home</a>
+        <a href="index.html">Home</a>
         
         <ul class="nav-places">
             <li><a href="dublin.html">Dublin</a></li>
             <li><a href="howth.html">Howth</a></li>
             <li><a href="galway.html">Galway</a></li>
-            <li><a href="aran.html">Aran Islands</a></li>
+            <li><a href="aran.html" class="active">Aran Islands</a></li>
             <li><a href="glendalough.html">Glendalough</a></li>
         </ul>
     </div>
@@ -27,13 +29,13 @@
 <main id="main">
     <div class="gallery">
         <img src="images/aran_cliff_view.JPG" alt="">
-        <img src="images/aran_coffee.jpg" alt="">
-        <img src="images/aran_biking.jpg" alt="">
         <img src="images/aran_ferry.JPG" alt="">
-        <img src="images/aran_ferry_group.JPG" alt="">
         <img src="images/aran_cow.JPG" alt="">
         <img src="images/aran_me_pic.jpg" alt="">
         <img src="images/aran_cliff_ruins.JPG" alt="">
+        <img src="images/aran_coffee.jpg" alt="">
+        <img src="images/aran_biking.jpg" alt="">
+        <img src="images/aran_ferry_group.JPG" alt="">
     </div>
 
     <section>
@@ -58,10 +60,18 @@
         <article class="guide-topic">
             <h3>Where to Eat</h3>
             <ul>
-                <li>Joe Watty's Pub & Seafood Bar: traditional Irish</li>
-                <li>The Bar Inis Mor: traditional Irish</li>
-                <li>Man of Aran Fudge: Fudge desserts</li>
-                <li>Aran Islands Cafe: drinks & baked goods</li>
+                <li>
+                    Joe Watty's Pub & Seafood Bar: traditional Irish
+                    <span id="joe-status"></span>
+                </li>
+                <li>
+                    Man of Aran Fudge: Fudge desserts
+                    <span id="fudge-status"></span>
+                </li>
+                <li>
+                    Aran Islands Cafe: drinks & baked goods
+                    <span id="aranCafe-status"></span>
+                </li>
             </ul>
         </article>
        
