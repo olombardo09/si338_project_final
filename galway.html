@@ -5,20 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galway</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/ai.css">
+    <link rel="stylesheet" href="css/reset.css">
 </head>
 <body>
     <header>
         <a href="#main" class="skip">Skip to Main Content</a>
-        <h1>Galway</h1>
+        <h1>
+            &#127808Galway
+        </h1>
     </header>
     <nav>
     <div class="nav-container">
-        <a href="index.html" class="nav-home">Home</a>
+        <a href="index.html">Home</a>
         
         <ul class="nav-places">
             <li><a href="dublin.html">Dublin</a></li>
             <li><a href="howth.html">Howth</a></li>
-            <li><a href="galway.html">Galway</a></li>
+            <li><a href="galway.html" class="active">Galway</a></li>
             <li><a href="aran.html">Aran Islands</a></li>
             <li><a href="glendalough.html">Glendalough</a></li>
         </ul>
@@ -30,12 +34,12 @@
         <img src="images/galway_live_music.jpeg" alt="">
         <img src="images/galway_muttons.jpeg" alt="">
         <img src="images/galway_comp.JPG" alt="">
-        <img src="images/galway_long_walk.jpeg" alt="">
         <img src="images/galway_prints.jpeg" alt="">
         <img src="images/galway_food.jpeg" alt="">
-        <img src="images/galway_pub_selfie.JPG" alt="">
         <img src="images/galway_TD.jpeg" alt="">
         <img src="images/galway_telefon.jpeg" alt="">
+        <img src="images/galway_long_walk.jpeg" alt="">
+        <img src="images/galway_pub_selfie.JPG" alt="">
     </div>
 
     <section>
@@ -66,10 +70,22 @@
         <article class="guide-topic">
             <h3>Where to Eat</h3>
             <ul>
-                <li>Coffeewerk and Press: coffee, pasteries</li>
-                <li>The Dough Bros: pizza</li>
-                <li>McDonagh's: fish & chips</li>
-                <li>The King's Head: Irish, Bar; locally sourced</li>
+                <li>
+                    Coffeewerk and Press: coffee, pasteries
+                    <span id="coffeewerk-status"></span>
+                </li>
+                <li>
+                    The Dough Bros: pizza
+                    <span id="dough-status"></span>
+                </li>
+                <li>
+                    McDonagh's: fish & chips
+                    <span id="mcdonagh-status"></span>
+                </li>
+                <li>
+                    The King's Head: Irish, Bar; locally sourced
+                    <span id="kings-status"></span>
+                </li>
             </ul>
         </article>
        
