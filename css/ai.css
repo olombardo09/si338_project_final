@@ -1,0 +1,48 @@
+/* Base styling for your toggle button */
+#text-resize-btn {
+    background-color: #395756;
+    border: 2px solid rgb(244, 167, 14);
+    color: white;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+#text-resize-btn:hover, 
+#text-resize-btn:focus-visible {
+    background-color: rgb(244, 167, 14);
+    border: 2px solid #395756;
+}
+
+body.large-text {
+    font-size: 1.25rem; /* Bumps up base text size by 25% */
+}
+
+body.large-text h2,
+body.large-text h3 {
+    font-size: 2.5rem;  /* Scales headers up perfectly alongside body text */
+}
+
+.status-badge {
+    display: inline-block;
+    padding: 2px 6px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    border-radius: 14px;
+    margin-left: 8px;
+}
+
+/* Green badge for open */
+.status-open {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+/* Red badge for closed */
+.status-closed {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
