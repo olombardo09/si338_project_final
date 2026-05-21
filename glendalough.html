@@ -5,22 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Glendalough</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/ai.css">
+    <link rel="stylesheet" href="css/reset.css">
 </head>
 <body>
     <header>
         <a href="#main" class="skip">Skip to Main Content</a>
-        <h1>Glendalough</h1>
+        <h1>&#127808Glendalough</h1>
     </header>
     <nav>
     <div class="nav-container">
-        <a href="index.html" class="nav-home">Home</a>
+        <a href="index.html">Home</a>
         
         <ul class="nav-places">
             <li><a href="dublin.html">Dublin</a></li>
             <li><a href="howth.html">Howth</a></li>
             <li><a href="galway.html">Galway</a></li>
             <li><a href="aran.html">Aran Islands</a></li>
-            <li><a href="glendalough.html">Glendalough</a></li>
+            <li><a href="glendalough.html" class="active">Glendalough</a></li>
         </ul>
     </div>
     </nav>
@@ -64,9 +66,18 @@
         <article class="guide-topic">
             <h3>Where to Eat</h3>
             <ul>
-                <li>The Wicklow Heather Restaurant: Irish, Pub</li>
-                <li>Glendalough Green: Cafe, Deli</li>
-                <li>Lynham's of Laragh: Irish, Pub</li>
+                <li>
+                    The Wicklow Heather Restaurant: Irish, Pub
+                    <span id="wicklow-status"></span>
+                </li>
+                <li>
+                    Glendalough Green: Cafe, Deli
+                    <span id="glendaCafe-status"></span>
+                </li>
+                <li>
+                    Lynhams of Laragh: Irish, Pub
+                    <span id="lynham-status"></span>
+                </li>
             </ul>
         </article>
        
