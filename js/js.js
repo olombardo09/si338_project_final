@@ -22,10 +22,10 @@ resizeBtn.addEventListener('click', function() {
 
 function updateAllVenues() {
     // 1. Get the current hour from the user's browser (0 to 23)
-    const currentHour = new Date().getHours();
+    let currentHour = new Date().getHours();
 
     // 2. Create a collection of our venues and their operating hours
-    const venues = [
+    let venues = [
         {
             id: "brazen-status",
             openHour: 12,
@@ -80,6 +80,56 @@ function updateAllVenues() {
             id: "oconnell-status",
             openHour: 13,
             closeHour: 23
+        },
+        {
+            id: "coffeewerk-status",
+            openHour: 9,
+            closeHour: 18
+        },
+        {
+            id: "dough-status",
+            openHour: 12,
+            closeHour: 21
+        },
+        {
+            id: "mcdonagh-status",
+            openHour: 12,
+            closeHour: 22
+        },
+        {
+            id: "kings-status",
+            openHour: 12,
+            closeHour: 23
+        },
+        {
+            id: "joe-status",
+            openHour: 12,
+            closeHour: 23
+        },
+        {
+            id: "fudge-status",
+            openHour: 10,
+            closeHour: 17
+        },
+        {
+            id: "aranCafe-status",
+            openHour: 8,
+            closeHour: 17
+        },
+        {
+            id: "wicklow-status",
+            openHour: 9,
+            closeHour: 17
+        },
+        {
+            id: "glendaCafe-status",
+            openHour: 9,
+            closeHour: 17
+        },
+        {
+            id: "lynham-status",
+            openHour: 8,
+            closeHour: 17
         }
     ];
 
