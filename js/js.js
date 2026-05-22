@@ -154,3 +154,11 @@ function updateAllVenues() {
 
 // Run the script cleanly once the DOM structure is fully parsed
 window.addEventListener('DOMContentLoaded', updateAllVenues);
+
+
+document.querySelector(".jump-top").addEventListener("click", function(){
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+});
