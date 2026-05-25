@@ -46,3 +46,22 @@ body.large-text h3 {
     color: #721c24;
     border: 1px solid #f5c6cb;
 }
+
+.skip {
+    position: absolute;
+    left: 8px;
+    top: 8px;
+    background-color: var(--dark-blue-green);
+    color: var(--light-grey);
+    padding: 8px 14px;
+    border: 2px solid var(--gold);
+    font-weight: bold;
+    z-index: 1000;
+    transform: translateX(-200%);
+    transition: transform 0.2s ease;
+}
+
+.skip:focus-visible {
+    transform: translateX(0);
+    outline: 2px solid var(--gold);
+}

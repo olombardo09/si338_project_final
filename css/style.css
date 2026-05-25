@@ -35,10 +35,10 @@
 
 @media (prefers-reduced-motion: reduce) {
   .gallery img {
-    transition: none !important; 
+    transition: none; 
   }
   .gallery img:hover{
-    transform: none !important; 
+    transform: none; 
   }
 }
 
@@ -99,6 +99,35 @@ h1, h2, h3 {
     font-family: 'Georgia', serif;
     color: var(--heading-color);
     margin-top: 15px;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+ul {
+  padding-left: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
 }
 
 .guide-topic {
@@ -169,25 +198,6 @@ nav a:focus-visible {
     border: 3px solid var(--gold);
     font-weight: bold;
     padding: 4px;
-}
-
-.skip {
-    position: absolute;
-    left: 8px;
-    top: 8px;
-    background-color: var(--dark-blue-green);
-    color: var(--light-grey);
-    padding: 8px 14px;
-    border: 2px solid var(--gold);
-    font-weight: bold;
-    z-index: 1000;
-    transform: translateX(-200%);
-    transition: transform 0.2s ease;
-}
-
-.skip:focus-visible {
-    transform: translateX(0);
-    outline: 2px solid var(--gold);
 }
 
 footer {
